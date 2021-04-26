@@ -4,25 +4,30 @@ using System.Collections.Generic;
 
 namespace Benchmarking.ExcplicitTypeInsatnces
 {
-    internal static class GenerateObjectInstances
+    public  class GenerateObjectInstances
     {
         private static List<Student> studentsList;
 
-        internal static Student CreateExplicitStudentInstance()
+        public GenerateObjectInstances()
+        {
+            studentsList = new List<Student>();
+        }
+
+        public static Student CreateExplicitStudentInstance()
         {
             Student explicitStd = new Student();
 
             return explicitStd;
         }
 
-        internal static Student CreateImplicitStudentInstance()
+        public static Student CreateImplicitStudentInstance()
         {
             var implicitStd = new Student();
 
             return implicitStd;
         }
 
-        internal static Student CreateImplicitStudentInstanceWithProps()
+        public static Student CreateImplicitStudentInstanceWithProps()
         {
             var student = new Student
             {
@@ -42,7 +47,7 @@ namespace Benchmarking.ExcplicitTypeInsatnces
             return student;
         }
 
-        internal static Student CreateExplicitStudentInstanceWithProps()
+        public static Student CreateExplicitStudentInstanceWithProps()
         {
             Student student = new Student
             {
@@ -62,7 +67,7 @@ namespace Benchmarking.ExcplicitTypeInsatnces
             return student;
         }
 
-        internal static bool AddStudentSimplifiedImplicit()
+        public static Student AddStudentSimplifiedImplicit()
         {
             var student = new Student
             {
@@ -80,10 +85,10 @@ namespace Benchmarking.ExcplicitTypeInsatnces
             };
 
             studentsList.Add(student);
-            return true;
+            return student;
         }
 
-        internal static bool AddStudentSimplifiedExplicit()
+        public static Student AddStudentSimplifiedExplicit()
         {
             Student student = new Student
             {
@@ -102,10 +107,10 @@ namespace Benchmarking.ExcplicitTypeInsatnces
 
             studentsList.Add(student);
 
-            return true;
+            return student;
         }
 
-        internal static bool AddStudentNotSimplifiedImplicit()
+        public static Student AddStudentNotSimplifiedImplicit()
         {
             var student = new Student();
 
@@ -118,10 +123,10 @@ namespace Benchmarking.ExcplicitTypeInsatnces
 
             studentsList.Add(student);
 
-            return true;
+            return student;
         }
 
-        internal static bool AddStudentNotSimplifiedExplicit()
+        public static Student AddStudentNotSimplifiedExplicit()
         {
             Student student = new Student();
 
@@ -134,7 +139,22 @@ namespace Benchmarking.ExcplicitTypeInsatnces
 
             studentsList.Add(student);
 
-            return true;
+            return student;
         }
+
+        // create instance with constructor as expression body 
+        public static Teacher CreateTeacher()
+        {
+            return new Teacher();
+        }
+
+
+        // create instance with constructor as code block
+        public static Specialization CreateSpecialization()
+        {
+            return new Specialization();
+        }
+
+
     }
 }

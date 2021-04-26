@@ -1,7 +1,6 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 using Benchmarking.ExcplicitTypeInsatnces.Models;
-using System;
 
 namespace Benchmarking.ExcplicitTypeInsatnces
 {
@@ -21,15 +20,21 @@ namespace Benchmarking.ExcplicitTypeInsatnces
         public Student ExplicitInstanceWithProps() => GenerateObjectInstances.CreateExplicitStudentInstanceWithProps();
 
         [Benchmark]
-        public Boolean ImplicitSimplifiedWithMethods() => GenerateObjectInstances.AddStudentSimplifiedImplicit();
+        public Student ImplicitSimplifiedWithMethods() => GenerateObjectInstances.AddStudentSimplifiedImplicit();
 
         [Benchmark]
-        public Boolean ImplicitNotSimplifiedWithMethods() => GenerateObjectInstances.AddStudentNotSimplifiedImplicit();
+        public Student ImplicitNotSimplifiedWithMethods() => GenerateObjectInstances.AddStudentNotSimplifiedImplicit();
 
         [Benchmark]
-        public Boolean ExplicitNotSimplifiedWithMethods() => GenerateObjectInstances.AddStudentNotSimplifiedExplicit();
-        
+        public Student ExplicitNotSimplifiedWithMethods() => GenerateObjectInstances.AddStudentNotSimplifiedExplicit();
+
         [Benchmark]
-        public Boolean ExplicitSimplifiedWithMethods() => GenerateObjectInstances.AddStudentSimplifiedExplicit();
+        public Student ExplicitSimplifiedWithMethods() => GenerateObjectInstances.AddStudentSimplifiedExplicit();
+
+        [Benchmark]
+        public Specialization ExpressionBodyConstructor() => GenerateObjectInstances.CreateSpecialization();
+
+        [Benchmark]
+        public Teacher CodeBlockConstructor() => GenerateObjectInstances.CreateTeacher();
     }
 }

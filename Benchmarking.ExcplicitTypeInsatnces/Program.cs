@@ -7,7 +7,7 @@ namespace Benchmarking.ExcplicitTypeInsatnces
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Explicit Types Instantiation!");
+            Console.WriteLine("Explicit Types Instantiation Benchmarking Started ...");
 
             _ = BenchmarkRunner.Run(typeof(Program).Assembly);
 
