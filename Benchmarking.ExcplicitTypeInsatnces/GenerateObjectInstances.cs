@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Benchmarking.ExcplicitTypeInsatnces
 {
-    public  class GenerateObjectInstances
+    public class GenerateObjectInstances
     {
         private static List<Student> studentsList;
 
@@ -142,19 +142,16 @@ namespace Benchmarking.ExcplicitTypeInsatnces
             return student;
         }
 
-        // create instance with constructor as expression body 
+        // create instance with constructor as expression body
         public static Teacher CreateTeacher()
         {
             return new Teacher();
         }
-
 
         // create instance with constructor as code block
         public static Specialization CreateSpecialization()
         {
             return new Specialization();
         }
-
-
     }
 }
