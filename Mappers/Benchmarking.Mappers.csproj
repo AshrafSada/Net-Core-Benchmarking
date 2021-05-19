@@ -27,12 +27,12 @@
         <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet mapster mapper -a &quot;$(TargetDir)$(ProjectName).dll&quot;" />
     </Target>-->
 
+    <ItemGroup>
+      <Folder Include="Models\" />
+    </ItemGroup>
     <!--Including generated files from Mapster in Project-->
     <ItemGroup>
         <Generated Include="**\*.g.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Models\" />
     </ItemGroup>
     
     <!--Generate Automatically Using Mapster-->

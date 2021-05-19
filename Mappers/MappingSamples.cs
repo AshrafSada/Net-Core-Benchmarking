@@ -14,14 +14,14 @@ namespace BenchmarkingMappers
             new Mapper(new MapperConfiguration(mc =>
             mc.AddProfile(new AutomapperProfile())));
 
-        #region Mapster
+        #region Mapster configure
 
         private static readonly TypeAdapterConfig typeAdapterConfig = GetTypeAdapterConfig();
 
         private static readonly MapsterMapper.IMapper MapsterMapper =
             new MapsterMapper.Mapper(typeAdapterConfig);
 
-        #endregion Mapster
+        #endregion Mapster configure
 
         private static readonly Product GenerateProduct
             = new Product
