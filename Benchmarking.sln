@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.StringConcaten
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.TryParseVsTryCatch", "Benchmarking.Exceptions\Benchmarking.TryParseVsTryCatch.csproj", "{E5BA5B34-2513-4658-BC33-E4C415C30866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking.SwitchVsIfElse", "Benchmarking.SwitchVsIfElse\Benchmarking.SwitchVsIfElse.csproj", "{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.SwitchVsIfElse", "Benchmarking.SwitchVsIfElse\Benchmarking.SwitchVsIfElse.csproj", "{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
