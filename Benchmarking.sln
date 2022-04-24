@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.TryParseVsTryC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.SwitchVsIfElse", "Benchmarking.SwitchVsIfElse\Benchmarking.SwitchVsIfElse.csproj", "{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking.LingPerformance", "Benchmarking.LingPerformance\Benchmarking.LingPerformance.csproj", "{3A4C01C1-39D0-448F-8660-7420BB5318FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0C5BD26-4988-48F0-8F4B-FFBD91B39FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A4C01C1-39D0-448F-8660-7420BB5318FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A4C01C1-39D0-448F-8660-7420BB5318FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A4C01C1-39D0-448F-8660-7420BB5318FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A4C01C1-39D0-448F-8660-7420BB5318FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
