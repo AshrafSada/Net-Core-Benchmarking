@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Benchmarking.Exceptions
+namespace Benchmarking.TryParseVsTryCatch
 {
     public class ParsingCatchingExceptions
     {

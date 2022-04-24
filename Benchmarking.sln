@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.Mappers", "Mappers\Benchmarking.Mappers.csproj", "{6EA09BF6-E2B5-4856-AAF8-35AD1BCAA667}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.ExcplicitTypeInsatnces", "Benchmarking.ExcplicitTypeInsatnces\Benchmarking.ExcplicitTypeInsatnces.csproj", "{95232E2F-3D09-409C-9D21-D3D6765EC4B6}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.AspNetCoreDI", "Benchmarking.AspNetCoreDI\Benchmarking.AspNetCoreDI.csproj", "{6B376C52-4BE2-42CD-B285-39027D25BFED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.ExcplicitTypeInstances", "Benchmarking.ExcplicitTypeInsatnces\Benchmarking.ExcplicitTypeInstances.csproj", "{95232E2F-3D09-409C-9D21-D3D6765EC4B6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.StringConcatenation", "Benchmarking.StringConcatenation\Benchmarking.StringConcatenation.csproj", "{B6C53D6B-B9FF-4DA9-9FB5-B552E38C097B}"
 EndProject
@@ -29,10 +27,6 @@ Global
 		{95232E2F-3D09-409C-9D21-D3D6765EC4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95232E2F-3D09-409C-9D21-D3D6765EC4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95232E2F-3D09-409C-9D21-D3D6765EC4B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6B376C52-4BE2-42CD-B285-39027D25BFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B376C52-4BE2-42CD-B285-39027D25BFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B376C52-4BE2-42CD-B285-39027D25BFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B376C52-4BE2-42CD-B285-39027D25BFED}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B6C53D6B-B9FF-4DA9-9FB5-B552E38C097B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B6C53D6B-B9FF-4DA9-9FB5-B552E38C097B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C53D6B-B9FF-4DA9-9FB5-B552E38C097B}.Release|Any CPU.ActiveCfg = Release|Any CPU

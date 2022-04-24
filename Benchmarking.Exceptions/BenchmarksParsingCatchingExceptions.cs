@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
 
-namespace Benchmarking.Exceptions
+namespace Benchmarking.TryParseVsTryCatch
 {
     [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
     public class BenchmarksParsingCatchingExceptions

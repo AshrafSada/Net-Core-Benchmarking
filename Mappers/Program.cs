@@ -2,7 +2,7 @@
 using BenchmarkDotNet.Running;
 using System;
 
-namespace BenchmarkingMappers
+namespace Benchmarking.Mappers
 {
     internal class Program
     {

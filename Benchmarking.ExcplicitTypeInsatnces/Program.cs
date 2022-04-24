@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Running;
 using System;
 
-namespace Benchmarking.ExcplicitTypeInsatnces
+namespace Benchmarking.ExcplicitTypeInstances
 {
     class Program
     {
