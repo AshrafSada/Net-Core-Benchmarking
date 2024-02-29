@@ -1,12 +1,12 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Benchmarking.Mappers
+namespace Benchmarking.PrimaryConstructor
 {
     internal static class Program
     {
         private static void Main()
         {
-            _ = BenchmarkRunner.Run(typeof(Program).Assembly);
+            BenchmarkRunner.Run<PrimaryConstructorBenchmarker>();
         }
     }
 }

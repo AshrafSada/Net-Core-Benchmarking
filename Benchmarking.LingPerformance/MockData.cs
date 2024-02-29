@@ -8,13 +8,15 @@ namespace Benchmarking.LingPerformance
 
         public MockData()
         {
-            // benchmark 60 000 products
-            int prodCount = 60000;
+            products = new List<Product>();
+            // benchmark 60,000 products
+            const int prodCount = 60_000;
             var filler = new GenericFiller<Product>();
             for (int i = 0; i < prodCount; i++)
             {
                 var p = new Product();
-                filler.Fill(p);
+                var product = filler.Fill(p);
+                products.Add(product);
             }
         }
 

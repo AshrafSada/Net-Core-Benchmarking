@@ -1,12 +1,13 @@
-﻿using BenchmarkDotNet.Running;
-using System;
+﻿using System;
+using BenchmarkDotNet.Running;
 
 namespace Benchmarking.TryParseVsTryCatch
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            Console.WriteLine("TryParse Vs TryCatch benchmarking started ...");
             _ = BenchmarkRunner.Run(typeof(Program).Assembly);
 
             _ = Console.ReadKey();

@@ -2,7 +2,7 @@
 
 namespace Benchmarking.TryParseVsTryCatch
 {
-    public class ParsingCatchingExceptions
+    public static class ParsingCatchingExceptions
     {
         public static string TryParseIntegerConversion()
         {

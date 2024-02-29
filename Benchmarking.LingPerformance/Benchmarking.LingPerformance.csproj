@@ -13,6 +13,6 @@
 
     <ItemGroup>
         <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
-        <PackageReference Include="DynaFill.Filler" Version="1.0.0.1" />
+        <PackageReference Include="DynaFill.Filler" Version="1.0.0.2" />
     </ItemGroup>
 </Project>

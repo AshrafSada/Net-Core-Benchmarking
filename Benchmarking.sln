@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.SwitchVsIfElse
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.LingPerformance", "Benchmarking.LingPerformance\Benchmarking.LingPerformance.csproj", "{3A4C01C1-39D0-448F-8660-7420BB5318FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking.DataItreation", "Benchmarking.DataItreation\Benchmarking.DataItreation.csproj", "{5F01937C-F9E5-44B1-AC7D-BEFA1640B351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.DataItreation", "Benchmarking.DataItreation\Benchmarking.DataItreation.csproj", "{5F01937C-F9E5-44B1-AC7D-BEFA1640B351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benchmarking.PrimaryConstructor", "Benchmarking.PrimaryConstructor\Benchmarking.PrimaryConstructor.csproj", "{F94F4468-FCE4-483A-A14E-373E9D68F8D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{5F01937C-F9E5-44B1-AC7D-BEFA1640B351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F01937C-F9E5-44B1-AC7D-BEFA1640B351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F01937C-F9E5-44B1-AC7D-BEFA1640B351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F94F4468-FCE4-483A-A14E-373E9D68F8D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F94F4468-FCE4-483A-A14E-373E9D68F8D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F94F4468-FCE4-483A-A14E-373E9D68F8D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F94F4468-FCE4-483A-A14E-373E9D68F8D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

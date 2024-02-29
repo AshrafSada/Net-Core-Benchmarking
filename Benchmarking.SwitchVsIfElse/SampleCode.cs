@@ -2,7 +2,7 @@
 
 namespace Benchmarking.SwitchVsIfElse
 {
-    public class SampleCode
+    public static class SampleCode
     {
         public static int ValidateEmployeeIfElse(Employee employee)
         {
@@ -54,6 +54,10 @@ namespace Benchmarking.SwitchVsIfElse
 
         public InvalidEmployeeException(string attributeName, object attributeValue)
             : base($"Invalid Attribute {attributeName} Value {attributeValue}")
+        {
+        }
+
+        public InvalidEmployeeException(string message) : base(message)
         {
         }
     }
