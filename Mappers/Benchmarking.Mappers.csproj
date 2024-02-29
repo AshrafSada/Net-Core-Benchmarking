@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -10,8 +10,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AutoMapper" Version="12.0.1" />
-        <PackageReference Include="BenchmarkDotNet" Version="0.13.8" />
+        <PackageReference Include="AutoMapper" Version="13.0.1" />
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
         <PackageReference Include="ExpressMapper.Core" Version="1.9.3" />
         <PackageReference Include="Mapster" Version="7.4.0" />
         <PackageReference Include="Mapster.Core" Version="1.2.1" />
@@ -28,13 +28,13 @@
     </Target>-->
 
     <ItemGroup>
-      <Folder Include="Models\" />
+        <Folder Include="Models\" />
     </ItemGroup>
     <!--Including generated files from Mapster in Project-->
     <ItemGroup>
         <Generated Include="**\*.g.cs" />
     </ItemGroup>
-    
+
     <!--Generate Automatically Using Mapster-->
     <!--<Target Name="Mapster" AfterTargets="AfterBuild">
         <Exec WorkingDirectory="$(ProjectDir)" Command="dotnet tool restore" />
@@ -44,9 +44,9 @@
     </Target>-->
 
     <!--To clean up generated code using Mapster-->
-    
+
     <Target Name="CleanGenerated">
         <Delete Files="@(Generated)" />
     </Target>
-    
+
 </Project>

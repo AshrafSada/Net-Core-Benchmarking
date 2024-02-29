@@ -2,14 +2,14 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-      <Optimize>true</Optimize>
+        <Optimize>true</Optimize>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BenchmarkDotNet" Version="0.13.5" />
+        <PackageReference Include="BenchmarkDotNet" Version="0.13.12" />
     </ItemGroup>
 </Project>

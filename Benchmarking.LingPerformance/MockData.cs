@@ -1,20 +1,21 @@
-﻿using Bogus;
+﻿using DynaFill.Filler;
 
 namespace Benchmarking.LingPerformance
 {
     public class MockData
     {
-        private readonly Faker<Product> faker = new();
         private readonly List<Product> products;
 
         public MockData()
         {
-            this.products = this.faker
-                .RuleFor(p => p.Id, f => f.UniqueIndex)
-                .RuleFor(p => p.Name, f => f.Finance.AccountName())
-                .RuleFor(p => p.Price, f => f.Finance.Amount())
-                .RuleFor(p => p.Active, f => f.Random.Bool())
-                .Generate(60000);
+            // benchmark 60 000 products
+            int prodCount = 60000;
+            var filler = new GenericFiller<Product>();
+            for (int i = 0; i < prodCount; i++)
+            {
+                var p = new Product();
+                filler.Fill(p);
+            }
         }
 
         public List<String> GetProductNamesLinqToActive() =>
