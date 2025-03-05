@@ -6,14 +6,14 @@ namespace Benchmarking.StringConcatenation
    [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
    public class ConcatenationBenchmarks
    {
-      [Benchmark] public string StringsAddedByPlus() => StringConcatentions.AddStrings();
+      [Benchmark] public string StringsAddedByPlus() => StringConcatenations.AddStrings();
 
-      [Benchmark] public string StringsConcatenated() => StringConcatentions.ConcatenateStrings();
+      [Benchmark] public string StringsConcatenated() => StringConcatenations.ConcatenateStrings();
 
-      [Benchmark] public string StringsAggregatedByStringBuilder() => StringConcatentions.ConcatStringBuilderStrings();
+      [Benchmark] public string StringsAggregatedByStringBuilder() => StringConcatenations.ConcatStringBuilderStrings();
 
-      [Benchmark] public string StringsAggregatedByStringFormat() => StringConcatentions.ConcatStringWithStringFormat();
+      [Benchmark] public string StringsAggregatedByStringFormat() => StringConcatenations.ConcatStringWithStringFormat();
 
-      [Benchmark] public string StringsAggregatedByStringInterpolation() => StringConcatentions.ConcatStringWithStringInterpolation();
+      [Benchmark] public string StringsAggregatedByStringInterpolation() => StringConcatenations.ConcatStringWithStringInterpolation();
    }
 }

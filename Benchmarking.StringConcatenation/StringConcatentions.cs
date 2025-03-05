@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Benchmarking.StringConcatenation
 {
-    public static class StringConcatentions
+    public static class StringConcatenations
     {
         public static string AddStrings()
         {
@@ -104,6 +104,23 @@ namespace Benchmarking.StringConcatenation
             string si = $"{s1}{s2}{s3}{s4}{s5}{s6}{s7}{s8}{s9}{s10}";
 
             return si;
+        }
+
+        public static string ConcatStringWithStringJoin()
+        {
+            string s1 = new String('A', 100);
+            string s2 = new String('A', 100);
+            string s3 = new String('A', 100);
+            string s4 = new String('A', 100);
+            string s5 = new String('A', 100);
+            string s6 = new String('A', 100);
+            string s7 = new String('A', 100);
+            string s8 = new String('A', 100);
+            string s9 = new String('A', 100);
+            string s10 = new String('A', 100);
+            string[] arr = { s1, s2, s3, s4, s5, s6, s7, s8, s9, s10 };
+            string sj = String.Join("", arr);
+            return sj;
         }
     }
 }
