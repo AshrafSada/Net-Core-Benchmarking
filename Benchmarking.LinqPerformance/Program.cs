@@ -6,7 +6,8 @@ namespace Benchmarking.LINQPerformance
     {
         private static void Main()
         {
-            BenchmarkRunner.Run<LINQBenchmarks>();
+            _ = BenchmarkRunner.Run<LINQBenchmarks>();
+            Console.ReadKey();
         }
     }
 }

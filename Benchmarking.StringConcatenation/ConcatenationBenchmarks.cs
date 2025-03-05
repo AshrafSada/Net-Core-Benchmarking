@@ -4,38 +4,38 @@ using BenchmarkDotNet.Order;
 namespace Benchmarking.StringConcatenation
 {
     [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
-    public static class ConcatenationBenchmarks
+    public class ConcatenationBenchmarks
     {
         [Benchmark]
-        public static string StringConcatenateByAppendToStringBuilder() =>
+        public string StringConcatenateByAppendToStringBuilder() =>
                     StringConcatenations.ConcatenateByAppendToStringBuilder();
 
         [Benchmark]
-        public static string StringConcatenateByDirectAdding() =>
+        public string StringConcatenateByDirectAdding() =>
                     StringConcatenations.ConcatenateByDirectAdding();
 
         [Benchmark]
-        public static string StringConcatenateByRawStringLiteralsByAddition() =>
+        public string StringConcatenateByRawStringLiteralsByAddition() =>
                     StringConcatenations.ConcatenateByRawStringLiteralsByAddition();
 
         [Benchmark]
-        public static string StringConcatenateByRawStringLiteralsByInterpolation() =>
+        public string StringConcatenateByRawStringLiteralsByInterpolation() =>
                     StringConcatenations.ConcatenateByRawStringLiteralsByInterpolation();
 
         [Benchmark]
-        public static string StringConcatenateByStringConcatFunc() =>
+        public string StringConcatenateByStringConcatFunc() =>
                     StringConcatenations.ConcatenateByStringConcatFunc();
 
         [Benchmark]
-        public static string StringConcatenateByStringInterpolation() =>
+        public string StringConcatenateByStringInterpolation() =>
                     StringConcatenations.ConcatenateByStringInterpolation();
 
         [Benchmark]
-        public static string StringConcatenateByStringJoin() =>
+        public string StringConcatenateByStringJoin() =>
                     StringConcatenations.ConcatenateByStringJoin();
 
         [Benchmark]
-        public static string StringConcatenateByUsingStringFormatFunc() =>
+        public string StringConcatenateByUsingStringFormatFunc() =>
                     StringConcatenations.ConcatenateByUsingStringFormatFunc();
     }
 }

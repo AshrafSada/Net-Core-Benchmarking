@@ -6,7 +6,8 @@ namespace Benchmarking.PrimaryConstructor
     {
         private static void Main()
         {
-            BenchmarkRunner.Run<PrimaryConstructorBenchmarker>();
+            _ = BenchmarkRunner.Run<PrimaryConstructorBenchmarker>();
+            Console.ReadKey();
         }
     }
 }
