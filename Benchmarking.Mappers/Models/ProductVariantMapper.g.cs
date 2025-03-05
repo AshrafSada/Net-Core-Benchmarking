@@ -1,4 +1,4 @@
-using BenchmarkingMappers.Domain;
+using Benchmarking.Mappers.Domain;
 
 namespace BenchmarkingMappers.Domain
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Benchmarking.ExcplicitTypeInsatnces
+﻿namespace Benchmarking.ExplicitTypeInstances.Models
 {
     public class Specialization
     {

@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BenchmarkingMappers.Domain
+namespace Benchmarking.Mappers.Domain
 {
     [AdaptTo("[name]CodeGenDto"), GenerateMapper]
     public class Product

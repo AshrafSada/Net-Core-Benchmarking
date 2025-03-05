@@ -1,8 +1,6 @@
-﻿using Benchmarking.ExcplicitTypeInsatnces.Models;
-using System;
-using System.Collections.Generic;
+﻿using Benchmarking.ExplicitTypeInstances.Models;
 
-namespace Benchmarking.ExcplicitTypeInsatnces
+namespace Benchmarking.ExplicitTypeInstances
 {
     public class GenerateObjectInstances
     {

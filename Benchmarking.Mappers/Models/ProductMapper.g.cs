@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using BenchmarkingMappers.Domain;
+using Benchmarking.Mappers.Domain;
 
 namespace BenchmarkingMappers.Domain
 {

@@ -3,17 +3,39 @@ using BenchmarkDotNet.Order;
 
 namespace Benchmarking.StringConcatenation
 {
-   [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
-   public class ConcatenationBenchmarks
-   {
-      [Benchmark] public string StringsAddedByPlus() => StringConcatenations.AddStrings();
+    [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
+    public static class ConcatenationBenchmarks
+    {
+        [Benchmark]
+        public static string StringConcatenateByAppendToStringBuilder() =>
+                    StringConcatenations.ConcatenateByAppendToStringBuilder();
 
-      [Benchmark] public string StringsConcatenated() => StringConcatenations.ConcatenateStrings();
+        [Benchmark]
+        public static string StringConcatenateByDirectAdding() =>
+                    StringConcatenations.ConcatenateByDirectAdding();
 
-      [Benchmark] public string StringsAggregatedByStringBuilder() => StringConcatenations.ConcatStringBuilderStrings();
+        [Benchmark]
+        public static string StringConcatenateByRawStringLiteralsByAddition() =>
+                    StringConcatenations.ConcatenateByRawStringLiteralsByAddition();
 
-      [Benchmark] public string StringsAggregatedByStringFormat() => StringConcatenations.ConcatStringWithStringFormat();
+        [Benchmark]
+        public static string StringConcatenateByRawStringLiteralsByInterpolation() =>
+                    StringConcatenations.ConcatenateByRawStringLiteralsByInterpolation();
 
-      [Benchmark] public string StringsAggregatedByStringInterpolation() => StringConcatenations.ConcatStringWithStringInterpolation();
-   }
+        [Benchmark]
+        public static string StringConcatenateByStringConcatFunc() =>
+                    StringConcatenations.ConcatenateByStringConcatFunc();
+
+        [Benchmark]
+        public static string StringConcatenateByStringInterpolation() =>
+                    StringConcatenations.ConcatenateByStringInterpolation();
+
+        [Benchmark]
+        public static string StringConcatenateByStringJoin() =>
+                    StringConcatenations.ConcatenateByStringJoin();
+
+        [Benchmark]
+        public static string StringConcatenateByUsingStringFormatFunc() =>
+                    StringConcatenations.ConcatenateByUsingStringFormatFunc();
+    }
 }

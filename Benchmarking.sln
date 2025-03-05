@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.EnhancedLoggin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.Mappers", "Benchmarking.Mappers\Benchmarking.Mappers.csproj", "{783632C7-6366-4AA7-A829-3A6A0E691CA0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.ExcplicitTypeInstances", "Benchmarking.ExcplicitTypeInstances\Benchmarking.ExcplicitTypeInstances.csproj", "{E34F50C2-169F-4325-BF47-3D80DA948DF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.ExplicitTypeInstances", "Benchmarking.ExplicitTypeInstances\Benchmarking.ExplicitTypeInstances.csproj", "{E34F50C2-169F-4325-BF47-3D80DA948DF1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.StringConcatenation", "Benchmarking.StringConcatenation\Benchmarking.StringConcatenation.csproj", "{C2348366-5555-4217-9DD6-2E73DF318695}"
 EndProject
@@ -14,9 +14,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.Exceptions", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.SwitchVsIfElse", "Benchmarking.SwitchVsIfElse\Benchmarking.SwitchVsIfElse.csproj", "{4F7FED8B-DAC5-4659-AB72-305DE23F38A5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.LinqPerformance", "Benchmarking.LinqPerformance\Benchmarking.LinqPerformance.csproj", "{A64053B3-D98D-4D65-90A1-F0DF74EBB8DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.LINQPerformance", "Benchmarking.LINQPerformance\Benchmarking.LINQPerformance.csproj", "{A64053B3-D98D-4D65-90A1-F0DF74EBB8DD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.DataItreation", "Benchmarking.DataItreation\Benchmarking.DataItreation.csproj", "{776B0B1C-B41D-4531-A7AF-540B09720993}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.DataIteration", "Benchmarking.DataIteration\Benchmarking.DataIteration.csproj", "{776B0B1C-B41D-4531-A7AF-540B09720993}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benchmarking.PrimaryConstructor", "Benchmarking.PrimaryConstructor\Benchmarking.PrimaryConstructor.csproj", "{7C2B1895-CFE7-4E48-80A9-D2448B093B07}"
 EndProject
@@ -25,7 +25,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5C787724-A43A-483B-AA19-B292712ECB09}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		Directory.Build.Props = Directory.Build.Props
 		README.md = README.md
 	EndProjectSection
 EndProject

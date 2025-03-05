@@ -1,7 +1,7 @@
 ﻿using Mapster;
 using System;
 
-namespace BenchmarkingMappers.Domain
+namespace Benchmarking.Mappers.Domain
 {
     [AdaptTo(name: "[name]CodeGenDto"), GenerateMapper]
     public class ProductVariant

@@ -1,15 +1,13 @@
-﻿using System;
-
-namespace Benchmarking.ExcplicitTypeInsatnces.Models
+﻿namespace Benchmarking.ExplicitTypeInstances.Models
 {
     public class Teacher
     {
         private readonly DateTimeOffset currentDateTime;
+
         public Teacher()
         {
             currentDateTime = DateTime.UtcNow;
         }
-
 
         public int Id { get; set; }
 
@@ -17,6 +15,5 @@ namespace Benchmarking.ExcplicitTypeInsatnces.Models
         public string LastName { get; set; }
 
         public Specialization Specialization { get; set; }
-
     }
 }

@@ -1,6 +1,6 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Benchmarking.ExcplicitTypeInstances
+namespace Benchmarking.ExplicitTypeInstances
 {
     internal class Program
     {

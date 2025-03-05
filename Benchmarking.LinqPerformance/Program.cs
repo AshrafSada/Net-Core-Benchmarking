@@ -1,12 +1,12 @@
 ﻿using BenchmarkDotNet.Running;
 
-namespace Benchmarking.LingPerformance
+namespace Benchmarking.LINQPerformance
 {
     internal static class Program
     {
         private static void Main()
         {
-            BenchmarkRunner.Run<LinqBenchmarks>();
+            BenchmarkRunner.Run<LINQBenchmarks>();
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using BenchmarkingMappers.Domain;
+﻿using Benchmarking.Mappers.Domain;
 using System;
 using System.Collections.Generic;
 
-namespace BenchmarkingMappers
+namespace Benchmarking.Mappers.Dtos
 {
     public class ProductDto
     {

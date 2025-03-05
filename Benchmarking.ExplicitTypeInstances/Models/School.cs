@@ -1,4 +1,4 @@
-﻿namespace Benchmarking.ExcplicitTypeInsatnces.Models
+﻿namespace Benchmarking.ExplicitTypeInstances.Models
 {
     public class School
     {

@@ -1,6 +1,6 @@
 ﻿using DynaFill.Filler;
 
-namespace Benchmarking.LingPerformance
+namespace Benchmarking.LINQPerformance
 {
     public class MockData
     {
@@ -20,12 +20,12 @@ namespace Benchmarking.LingPerformance
             }
         }
 
-        public List<String> GetProductNamesLinqToActive() =>
+        public List<string> GetProductNamesLinqToActive() =>
             products.Where(e => e.Active == true).Select(e => e.Name).ToList();
 
         public List<string> GetProductNamesForEachActive()
         {
-            var names = new List<String>();
+            var names = new List<string>();
             foreach (var product in this.products)
             {
                 names.Add(product.Name);

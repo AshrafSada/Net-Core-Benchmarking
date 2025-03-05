@@ -1,12 +1,13 @@
 ﻿using AutoMapper;
+using Benchmarking.Mappers.Domain;
+using Benchmarking.Mappers.Dtos;
 using BenchmarkingMappers.Domain;
-using BenchmarkingMappers.Dtos;
 using Mapster;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BenchmarkingMappers
+namespace Benchmarking.Mappers
 {
     public static class MappingSamples
     {

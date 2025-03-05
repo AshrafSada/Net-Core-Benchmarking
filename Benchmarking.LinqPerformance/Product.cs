@@ -1,4 +1,4 @@
-﻿namespace Benchmarking.LingPerformance
+﻿namespace Benchmarking.LINQPerformance
 {
     public class Product
     {

@@ -1,8 +1,8 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
-using Benchmarking.ExcplicitTypeInsatnces.Models;
+using Benchmarking.ExplicitTypeInstances.Models;
 
-namespace Benchmarking.ExcplicitTypeInsatnces
+namespace Benchmarking.ExplicitTypeInstances
 {
     [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
     public class InstanceBenchmarks

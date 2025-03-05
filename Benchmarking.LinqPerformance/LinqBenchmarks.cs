@@ -1,16 +1,16 @@
 ﻿using BenchmarkDotNet.Attributes;
 
-namespace Benchmarking.LingPerformance
+namespace Benchmarking.LINQPerformance
 {
     [MemoryDiagnoser()]
-    public class LinqBenchmarks
+    public class LINQBenchmarks
     {
         private static readonly MockData Mocks = new MockData();
 
-        [Benchmark] public List<String> GetProductNameForActive() => Mocks.GetProductNamesForActive();
+        [Benchmark] public List<string> GetProductNameForActive() => Mocks.GetProductNamesForActive();
 
-        [Benchmark] public List<String> GetProductNameForEachActive() => Mocks.GetProductNamesForEachActive();
+        [Benchmark] public List<string> GetProductNameForEachActive() => Mocks.GetProductNamesForEachActive();
 
-        [Benchmark] public List<String> GetProductNameLinqToActive() => Mocks.GetProductNamesLinqToActive();
+        [Benchmark] public List<string> GetProductNameLinqToActive() => Mocks.GetProductNamesLinqToActive();
     }
 }

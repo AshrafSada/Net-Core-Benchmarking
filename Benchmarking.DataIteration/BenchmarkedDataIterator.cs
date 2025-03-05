@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using BenchmarkDotNet.Attributes;
 
-namespace Benchmarking.DataItreation
+namespace Benchmarking.DataIteration
 {
     [MemoryDiagnoser(false)]
     public class BenchmarkedDataIterator

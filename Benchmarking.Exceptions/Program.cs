@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 
-namespace Benchmarking.TryParseVsTryCatch
+namespace Benchmarking.Exceptions
 {
     internal class Program
     {

@@ -6,7 +6,7 @@ namespace Benchmarking.StringConcatenation
     {
         private static void Main()
         {
-            _ = BenchmarkRunner.Run(typeof(Program).Assembly);
+            BenchmarkRunner.Run(typeof(Program).Assembly);
         }
     }
 }

@@ -1,8 +1,9 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Order;
+using Benchmarking.Mappers.Dtos;
 using BenchmarkingMappers.Domain;
 
-namespace BenchmarkingMappers
+namespace Benchmarking.Mappers
 {
     [MemoryDiagnoser, Orderer(SummaryOrderPolicy.FastestToSlowest)]
     public class MappingBenchmarks
